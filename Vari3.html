@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="number" id="radius" placeholder="Nhập bán kính"><br><br>
+    <button onclick="getPerimeter()">Chu vi hình tròn</button>
+    <button onclick="getAcreage()">Diện tích hình tròn</button>
+    <p id="per"></p>
+    <p id="acr"></p>
+    <script>
+        function getPerimeter() {
+            let a = document.getElementById("radius").value;
+            let a1 = (2 * Math.PI * a);
+            radius = parseFloat(a1.toFixed(2));
+            document.getElementById("per").textContent = "Chi vi hình tròn là: " + radius;
+        }
+        function getAcreage() {
+            let a = document.getElementById("radius").value;
+            let a1 = (Math.PI * Math.pow(a, 2));
+            radius = parseFloat(a1.toFixed(2));
+            document.getElementById("acr").textContent = "Diện tích hình tròn là: " + radius;
+        }
+    </script>
+</body>
+
+</html>

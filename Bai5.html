@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .cl{
+        width: 120px;
+    }
+    .btn  {
+        margin-left: 100px;
+    }
+</style>
+<body>
+    <form action="">
+        <table>
+            <tr>
+                <td class="cl">Username:</td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td class="cl">Password:</td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td class="cl">City of:</td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td class="cl">Employment:</td>
+                <td><Select>
+                    <option value="">--Choose a Server--</option>
+                    <option value="java">Java</option>
+                    <option value="c#">C#</option>
+                    <option value="js">Javascript</option>
+                    <option value="python">Python</option>
+                </Select></td>
+            </tr>
+            <tr>
+                <td class="cl">Please specify your role:</td>
+                <td>
+                    <input type="radio" name="rd1">Admin <br>
+                    <input type="radio" name="rd1">Engineer <br>
+                    <input type="radio" name="rd1">Manager <br>
+                    <input type="radio" name="rd1">Guest <br>
+                </td>
+            </tr>
+            <tr>
+                <td class="cl">Single Sign-on to the following:</td>
+                <td>
+                    <input type="checkbox" name="cb1">Mail <br>
+                    <input type="checkbox" name="cb1">Payroll <br>
+                    <input type="checkbox" name="cb1">Self-service <br>
+                </td>
+            </tr>
+        </table><br>
+        <button type="button" class="btn">Login</button>
+        <button type="reset">Reset</button>
+    </form>
+</body>
+</html>

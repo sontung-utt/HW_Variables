@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="number" id="celsius" placeholder="Độ C (Celsius)">
+    <button onclick="getFahrenheit()">Chuyển sang độ F</button>
+    <p id="fahren"></p>
+    <script>
+        function getFahrenheit() {
+            let a = document.getElementById("celsius").value;
+            let f=(a/5)*9+32;
+            f1=parseFloat(f.toFixed(1));
+            document.getElementById("fahren").textContent="Đô F (Fahrenheit) là: "+f1;
+        }
+    </script>
+</body>
+
+</html>

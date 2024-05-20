@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text" placeholder="Nhập chiều dài" id="cd">
+    <input type="text" placeholder="Nhập chiều rộng" id="cr"><br><br>
+    <button onclick="getPerimeter()">Tính chu vi</button>
+    <button onclick="getAcreage()">Tính diện tích</button>
+    <p id="per"></p>
+    <p id="acr"></p>
+    <script>
+        function getPerimeter() {
+            let a = document.getElementById("cr").value;
+            let b = document.getElementById("cd").value;
+            let c = (parseInt(a) + parseInt(b)) * 2;
+            document.getElementById("per").textContent = "Chu vi hình chữ nhật là: " + c;
+        }
+        function getAcreage(){
+            let a = document.getElementById("cr").value;
+            let b = document.getElementById("cd").value;
+            let d = a * b;
+            document.getElementById("acr").textContent = "Diện tích hình chữ nhật là: " + d;
+        }
+    </script>
+</body>
+
+</html>

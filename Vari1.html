@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="number" name="" id="math" placeholder="Nhập điểm toán">
+    <input type="number" name="" id="chem" placeholder="Nhập điểm hóa">
+    <input type="number" name="" id="bio" placeholder="Nhập điểm sinh"><br><br>
+    <button onclick="getAveraged()">Tính trung bình</button>
+    <button onclick="getSum()">Tính tổng</button>
+    <p id="avg"></p>
+    <p id="sum"></p>
+    <script>
+        function getAveraged(){
+            let a=document.getElementById("math").value;
+            let b=document.getElementById("chem").value;
+            let c=document.getElementById("bio").value;
+            let math=parseInt(a);
+            let chem=parseInt(b);
+            let bio=parseInt(c);
+            document.getElementById("avg").textContent="Điểm trung bình của 3 môn là: "+((math+chem+bio)/3);
+        }
+        function getSum(){
+            let a=document.getElementById("math").value;
+            let b=document.getElementById("chem").value;
+            let c=document.getElementById("bio").value;
+            let math=parseInt(a);
+            let chem=parseInt(b);
+            let bio=parseInt(c);
+            document.getElementById("sum").textContent="Điểm tổng của 3 môn là: "+(math+chem+bio);
+        }
+    </script>
+</body>
+</html>

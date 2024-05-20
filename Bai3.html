@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="number" id="num1" placeholder="Nhập số a">
+    <input type="number" id="num2" placeholder="Nhập số b"><br><br>
+    <button onclick="compareNum()">So sánh 2 số</button>
+    <p id="text1"></p>
+    <p id="text2"></p>
+    <p id="text3"></p>
+    <script>
+        function compareNum() {
+            let a=document.getElementById("num1").value;
+            let b=document.getElementById("num2").value;
+            if (a>b) {
+                alert("Số a lớn hơn số b");
+                document.getElementById("text1").textContent = "Số a lớn hơn số b";
+            }
+            else {
+                alert("Số a không lớn hơn số b");
+                document.getElementById("text1").textContent = "Số a không lớn hơn số b";
+            }
+
+            if (a==b){
+                alert("Số a bằng số b");
+                document.getElementById("text2").textContent = "Số a bằng số b";
+            }
+            else{
+                alert("Số a không bằng số b");
+                document.getElementById("text2").textContent = "Số a không bằng số b";
+            }
+
+            if (a!==b){
+                alert("Số a khác số b");
+                document.getElementById("text3").textContent = "Số a khác số b";
+            }
+            else{
+                alert("Số a không khác số b")
+                document.getElementById("text2").textContent = "Số a không khác số b";
+            }
+        }
+    </script>
+</body>
+</html>
